@@ -10,7 +10,6 @@ def main():
     """
 
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "test_settings")
-    print(os.environ)
 
     import django
     from django.conf import settings
