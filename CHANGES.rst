@@ -6,7 +6,8 @@ Changes
 Unreleased
 ----------
 
-- Require Python 3.11 or newer and Django 4.1.3 or newer.
+- Require Python 3.11 or newer and Django 5.2 or newer.
+- Add support for Python 3.12, 3.13 and 3.14 and Django 5.2, 6.0 and 6.1.
 - Run tests through Django directly, correct the QA and Django development
   environments, and preserve each environment's selected Django version.
 - Switched to trusted publisher release process with Django Commons.
