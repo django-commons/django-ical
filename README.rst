@@ -4,9 +4,9 @@ django-ical
 |pypi| |docs| |build| |django-commons|
 
 django-ical is a simple library/framework for creating
-`iCal <http://www.ietf.org/rfc/rfc2445.txt>`_
+`iCal <https://www.rfc-editor.org/rfc/rfc2445.txt>`_
 feeds based in Django's
-`syndication feed framework <https://docs.djangoproject.com/en/3.0/ref/contrib/syndication/>`_.
+`syndication feed framework <https://docs.djangoproject.com/en/stable/ref/contrib/syndication/>`_.
 
 This documentation is modeled after the documentation for the syndication feed
 framework so you can think of it as a simple extension.
@@ -16,7 +16,7 @@ able to be able to use django-ical fairly quickly. It works the same way as
 the Django syndication framework but adds a few extension properties to
 support iCalendar feeds.
 
-django-ical uses the `icalendar <http://pypi.python.org/pypi/icalendar/>`_ library
+django-ical uses the `icalendar <https://pypi.org/project/icalendar/>`_ library
 under the hood to generate iCalendar feeds.
 
 Documentation
@@ -34,10 +34,10 @@ https://django-ical.readthedocs.io/en/latest/
 .. |docs| image:: https://readthedocs.org/projects/django-ical/badge/?version=latest
     :alt: Documentation Status
     :scale: 100%
-    :target: http://django-ical.readthedocs.io/en/latest/?badge=latest
+    :target: https://django-ical.readthedocs.io/en/latest/?badge=latest
 
-.. |build| image:: https://github.com/django-commons/django-ical/workflows/Test/badge.svg
-   :target: https://github.com/django-commons/django-ical/actions
+.. |build| image:: https://github.com/django-commons/django-ical/actions/workflows/test.yml/badge.svg
+   :target: https://github.com/django-commons/django-ical/actions/workflows/test.yml
    :alt: GitHub Actions
 
 .. |django-commons| image:: https://img.shields.io/badge/Django%20Commons-organization-blue

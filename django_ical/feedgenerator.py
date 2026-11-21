@@ -24,7 +24,7 @@ Sample usage:
 >>> fp.close()
 
 For definitions of the iCalendar format see:
-http://www.ietf.org/rfc/rfc2445.txt
+https://www.rfc-editor.org/rfc/rfc2445.txt
 """
 
 from icalendar import Calendar, Event, Todo
@@ -42,7 +42,7 @@ FEED_FIELD_MAP = (
     (
         "ttl",
         "x-published-ttl",
-    ),  # See format here: http://www.rfc-editor.org/rfc/rfc2445.txt (sec 4.3.6)
+    ),  # See format here: https://www.rfc-editor.org/rfc/rfc2445.txt (sec 4.3.6)
 )
 
 ITEM_ELEMENT_FIELD_MAP = (
@@ -69,7 +69,8 @@ ITEM_ELEMENT_FIELD_MAP = (
     ("attendee", "attendee"),
     ("valarm", None),
     # additional properties supported by the Todo class (VTODO calendar component).
-    # see https://icalendar.readthedocs.io/en/latest/_modules/icalendar/cal.html#Todo
+    # see
+    # https://icalendar.readthedocs.io/en/latest/reference/api/icalendar.cal.todo.html
     ("completed", "completed"),
     ("percent_complete", "percent-complete"),
     ("priority", "priority"),
