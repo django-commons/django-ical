@@ -353,9 +353,9 @@ Here is a table of all of the fields that django-ical supports.
 +-----------------------+-----------------------+-----------------------------+
 | contact               | `CONTACT`_            | Not yet documented.         |
 +-----------------------+-----------------------+-----------------------------+
-| recurrence_id         | `RECURRENCE_ID`_      | Not yet documented.         |
+| recurrence_id         | `RECURRENCE-ID`_      | Not yet documented.         |
 +-----------------------+-----------------------+-----------------------------+
-| related_to            | `RELATED_TO`_         | Not yet documented.         |
+| related_to            | `RELATED-TO`_         | Not yet documented.         |
 +-----------------------+-----------------------+-----------------------------+
 | action                | `ACTION`_             | Not yet documented.         |
 +-----------------------+-----------------------+-----------------------------+
@@ -365,7 +365,7 @@ Here is a table of all of the fields that django-ical supports.
 +-----------------------+-----------------------+-----------------------------+
 | sequence              | `SEQUENCE`_           | Not yet documented.         |
 +-----------------------+-----------------------+-----------------------------+
-| request_status        | `REQUEST_STATUS`_     | Not yet documented.         |
+| request_status        | `REQUEST-STATUS`_     | Not yet documented.         |
 +-----------------------+-----------------------+-----------------------------+
 
 
