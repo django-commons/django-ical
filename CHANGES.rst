@@ -3,8 +3,8 @@ Changes
 =======
 
 
-Unreleased
-----------
+1.10.0 (2026-11-21)
+-------------------
 
 - Require Python 3.11 or newer and Django 5.2 or newer.
 - Add support for Python 3.12, 3.13, 3.14 and 3.15, PyPy 3.11 and
