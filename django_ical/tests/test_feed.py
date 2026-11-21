@@ -112,7 +112,10 @@ class TestItemsFeed(ICalFeed):
                     },
                 ],
                 "attach": [
-                    ("https://example.com/attachment.pdf", {"FMTTYPE": "application/pdf"})
+                    (
+                        "https://example.com/attachment.pdf",
+                        {"FMTTYPE": "application/pdf"},
+                    )
                 ],
             },
             {

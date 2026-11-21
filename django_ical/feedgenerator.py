@@ -100,6 +100,28 @@ ITEM_ELEMENT_FIELD_MAP = (
 )
 
 
+def has_parameters(value):
+    """
+    Check if the value is a ``(value, parameters)`` pair.
+    """
+    return isinstance(value, tuple) and len(value) == 2 and isinstance(value[1], dict)
+
+
+def add_attachments(element, efield, val):
+    """
+    Add one attachment or a list or tuple of attachments to the element.
+
+    An attachment is either a plain value or a ``(value, parameters)`` pair.
+    """
+    if has_parameters(val) or not isinstance(val, (list, tuple)):
+        val = [val]
+    for attachment in val:
+        if has_parameters(attachment):
+            element.add(efield, attachment[0], parameters=attachment[1])
+        else:
+            element.add(efield, attachment)
+
+
 class ICal20Feed(SyndicationFeed):
     """
     iCalendar 2.0 Feed implementation.
@@ -148,16 +170,7 @@ class ICal20Feed(SyndicationFeed):
                         for list_item in val:
                             element.add_component(list_item)
                     elif ifield == "attach":
-                        if isinstance(val, tuple) and len(val) == 2 and isinstance(val[1], dict):
-                            element.add(efield, val[0], parameters=val[1])
-                        elif isinstance(val, (list, tuple)):
-                            for list_item in val:
-                                if isinstance(list_item, tuple) and len(list_item) == 2 and isinstance(list_item[1], dict):
-                                    element.add(efield, list_item[0], parameters=list_item[1])
-                                else:
-                                    element.add(efield, list_item)
-                        else:
-                            element.add(efield, val)
+                        add_attachments(element, efield, val)
                     else:
                         element.add(efield, val)
             calendar.add_component(element)
