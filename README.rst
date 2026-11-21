@@ -1,7 +1,7 @@
 django-ical
 ===========
 
-|pypi| |docs| |build| |coverage| |django-commons|
+|pypi| |docs| |build| |django-commons|
 
 django-ical is a simple library/framework for creating
 `iCal <http://www.ietf.org/rfc/rfc2445.txt>`_
@@ -39,10 +39,6 @@ https://django-ical.readthedocs.io/en/latest/
 .. |build| image:: https://github.com/django-commons/django-ical/workflows/Test/badge.svg
    :target: https://github.com/django-commons/django-ical/actions
    :alt: GitHub Actions
-
-.. |coverage| image:: https://codecov.io/gh/django-commons/django-ical/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/django-commons/django-ical
-   :alt: Coverage
 
 .. |django-commons| image:: https://img.shields.io/badge/Django%20Commons-organization-blue
    :target: https://github.com/django-commons/
