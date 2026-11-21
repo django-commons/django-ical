@@ -2,11 +2,11 @@ from datetime import date
 from datetime import datetime
 from datetime import timedelta
 from os import linesep
+from zoneinfo import ZoneInfo
 
 from django.test import TestCase
 from django.test.client import RequestFactory
 
-from dateutil import tz
 import icalendar
 
 from django_ical import utils
@@ -449,8 +449,11 @@ class ICal20FeedTest(TestCase):
         self.assertEqual(calendar["X-WR-TIMEZONE"], "Asia/Tokyo")
 
     def test_timezone(self):
-        tokyo = tz.gettz("Asia/Tokyo")  # or JST or Japan Standard Time
-        us_eastern = tz.gettz("US/Eastern")  # or EDT or Eastern (Daylight) Time
+        # ZoneInfo raises an error for a name that the time zone database
+        # does not have. Legacy names such as US/Eastern are missing from
+        # some systems, so the canonical names are used.
+        tokyo = ZoneInfo("Asia/Tokyo")  # or JST or Japan Standard Time
+        new_york = ZoneInfo("America/New_York")  # or EDT or Eastern Daylight Time
 
         class TestTimezoneFeed(TestItemsFeed):
             def items(self):
@@ -472,8 +475,8 @@ class ICal20FeedTest(TestCase):
                         "title": "Title2",
                         "description": "Description2",
                         "link": "/event/2",
-                        "start": datetime(2012, 5, 6, 18, 00, tzinfo=us_eastern),
-                        "end": datetime(2012, 5, 6, 20, 00, tzinfo=us_eastern),
+                        "start": datetime(2012, 5, 6, 18, 00, tzinfo=new_york),
+                        "end": datetime(2012, 5, 6, 20, 00, tzinfo=new_york),
                         "recurrences": {
                             "rrules": [],
                             "xrules": [],
@@ -509,7 +512,7 @@ class ICal20FeedTest(TestCase):
         )
         self.assertIn(
             calendar.subcomponents[1]["DTSTART"].params["TZID"],
-            ("EDT", "US/Eastern", "America/New_York"),
+            ("EDT", "America/New_York"),
         )
 
         self.assertEqual(
@@ -517,7 +520,7 @@ class ICal20FeedTest(TestCase):
         )
         self.assertIn(
             calendar.subcomponents[1]["DTEND"].params["TZID"],
-            ("EDT", "US/Eastern", "America/New_York"),
+            ("EDT", "America/New_York"),
         )
 
     def test_file_name(self):

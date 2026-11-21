@@ -12,6 +12,8 @@ Unreleased
   environments, and preserve each environment's selected Django version.
 - Switched to trusted publisher release process with Django Commons.
 - Switch from Jazzband org to Django Commons.
+- Fix the time zone test failing with ``KeyError: 'TZID'`` on systems
+  without legacy time zone names such as ``US/Eastern`` (#69).
 
 
 1.9.2 (2023-06-12)
