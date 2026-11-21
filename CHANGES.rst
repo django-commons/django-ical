@@ -7,7 +7,11 @@ Unreleased
 ----------
 
 - Require Python 3.11 or newer and Django 5.2 or newer.
-- Add support for Python 3.12, 3.13 and 3.14 and Django 5.2, 6.0 and 6.1.
+- Add support for Python 3.12, 3.13, 3.14 and 3.15, PyPy 3.11 and
+  Django 5.2, 6.0 and 6.1.
+- Support the ``ATTACH`` property in feed items (#79).
+  [Fire162]
+- Add the changelog to the published docs and fix broken links.
 - Run tests through Django directly, correct the QA and Django development
   environments, and preserve each environment's selected Django version.
 - Switched to trusted publisher release process with Django Commons.
