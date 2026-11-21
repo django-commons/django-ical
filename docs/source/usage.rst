@@ -8,7 +8,7 @@ The high level iCal feed-generating is supplied by the
 :class:`ICalFeed <django_ical.views.ICalFeed>` class.
 To create a feed, write a :class:`ICalFeed <django_ical.views.ICalFeed>`
 class and point to an instance of it in your
-`URLconf <https://docs.djangoproject.com/en/4.2/topics/http/urls/>`_.
+`URLconf <https://docs.djangoproject.com/en/stable/topics/http/urls/>`_.
 
 With RSS feeds, the items in the feed represent articles or simple web pages.
 The :class:`ICalFeed <django_ical.views.ICalFeed>` class represents an
@@ -384,23 +384,23 @@ You use this framework on your own, for lower-level feed generation. You can
 also create custom feed generator subclasses for use with the feed_type
 option.
 
-See: `The syndication feed framework: Specifying the type of feed <https://docs.djangoproject.com/en/1.9/ref/contrib/syndication/#specifying-the-type-of-feed>`_
+See: `The syndication feed framework: Specifying the type of feed <https://docs.djangoproject.com/en/stable/ref/contrib/syndication/#specifying-the-type-of-feed>`_
 
-.. _PRODID: http://www.kanzaki.com/docs/ical/prodid.html
-.. _METHOD: http://www.kanzaki.com/docs/ical/method.html
-.. _SUMMARY: http://www.kanzaki.com/docs/ical/summary.html
-.. _DESCRIPTION: http://www.kanzaki.com/docs/ical/description.html
-.. _UID: http://www.kanzaki.com/docs/ical/uid.html
-.. _CLASS: http://www.kanzaki.com/docs/ical/class.html
-.. _CREATED: http://www.kanzaki.com/docs/ical/created.html
-.. _LAST-MODIFIED: http://www.kanzaki.com/docs/ical/lastModified.html
-.. _DTSTART: http://www.kanzaki.com/docs/ical/dtstart.html
-.. _DTEND: http://www.kanzaki.com/docs/ical/dtend.html
-.. _GEO: http://www.kanzaki.com/docs/ical/geo.html
-.. _LOCATION: http://www.kanzaki.com/docs/ical/location.html
-.. _TRANSP: http://www.kanzaki.com/docs/ical/transp.html
-.. _URL: http://www.kanzaki.com/docs/ical/url.html
-.. _ORGANIZER: http://www.kanzaki.com/docs/ical/organizer.html
+.. _PRODID: https://www.kanzaki.com/docs/ical/prodid.html
+.. _METHOD: https://www.kanzaki.com/docs/ical/method.html
+.. _SUMMARY: https://www.kanzaki.com/docs/ical/summary.html
+.. _DESCRIPTION: https://www.kanzaki.com/docs/ical/description.html
+.. _UID: https://www.kanzaki.com/docs/ical/uid.html
+.. _CLASS: https://www.kanzaki.com/docs/ical/class.html
+.. _CREATED: https://www.kanzaki.com/docs/ical/created.html
+.. _LAST-MODIFIED: https://www.kanzaki.com/docs/ical/lastModified.html
+.. _DTSTART: https://www.kanzaki.com/docs/ical/dtstart.html
+.. _DTEND: https://www.kanzaki.com/docs/ical/dtend.html
+.. _GEO: https://www.kanzaki.com/docs/ical/geo.html
+.. _LOCATION: https://www.kanzaki.com/docs/ical/location.html
+.. _TRANSP: https://www.kanzaki.com/docs/ical/transp.html
+.. _URL: https://www.kanzaki.com/docs/ical/url.html
+.. _ORGANIZER: https://www.kanzaki.com/docs/ical/organizer.html
 .. _ATTENDEE: https://www.kanzaki.com/docs/ical/attendee.html
 .. _RRULE: https://www.kanzaki.com/docs/ical/rrule.html
 .. _EXRULE: https://www.kanzaki.com/docs/ical/exrule.html
@@ -435,9 +435,9 @@ See: `The syndication feed framework: Specifying the type of feed <https://docs.
 .. _TRIGGER: https://www.kanzaki.com/docs/ical/trigger.html
 .. _SEQUENCE: https://www.kanzaki.com/docs/ical/sequence.html
 .. _REQUEST-STATUS: https://icalendar.org/iCalendar-RFC-5545/3-8-8-3-request-status.html
-.. _X-WR-CALNAME: http://en.wikipedia.org/wiki/ICalendar#Calendar_extensions
-.. _X-WR-CALDESC: http://en.wikipedia.org/wiki/ICalendar#Calendar_extensions
-.. _X-WR-TIMEZONE: http://en.wikipedia.org/wiki/ICalendar#Calendar_extensions
-.. _iCalendar: http://icalendar.readthedocs.org/en/latest/index.html
+.. _X-WR-CALNAME: https://en.wikipedia.org/wiki/ICalendar
+.. _X-WR-CALDESC: https://en.wikipedia.org/wiki/ICalendar
+.. _X-WR-TIMEZONE: https://en.wikipedia.org/wiki/ICalendar
+.. _iCalendar: https://icalendar.readthedocs.io/en/latest/
 .. _CATEGORIES: https://www.kanzaki.com/docs/ical/categories.html
-.. _django-recurrence: https://github.com/django-recurrence/django-recurrence
+.. _django-recurrence: https://github.com/django-commons/django-recurrence
