@@ -32,7 +32,7 @@ Contents
 
    usage
    reference/index
-   changelog
+   changes
 
 
 Indices and tables
