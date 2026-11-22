@@ -43,6 +43,9 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/django-commons/django-ical"
+Documentation = "https://django-ical.readthedocs.io/"
+Changelog = "https://github.com/django-commons/django-ical/blob/master/CHANGES.rst"
+Issues = "https://github.com/django-commons/django-ical/issues"
 
 [tool.setuptools.packages.find]
 include = ["django_ical*"]
