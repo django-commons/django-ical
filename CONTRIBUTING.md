@@ -1,3 +1,5 @@
 This is a [Django Commons](https://github.com/django-commons/) project. By contributing you agree to abide by the [Contributor Code of Conduct](https://github.com/django-commons/membership/blob/main/CODE_OF_CONDUCT.md).
 
 Have ideas for how this project can improve? Open a pull request!
+
+If you use LLMs or coding agents to contribute, follow the guidelines in [AGENTS.md](AGENTS.md).
